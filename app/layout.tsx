@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google"
+import { Source_Serif_4, JetBrains_Mono, Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Navbar } from "@/components/layout/navbar"
@@ -9,20 +9,22 @@ import { SiteFooter } from "@/components/layout/site-footer"
 import { FloatingCta } from "@/components/layout/floating-cta"
 import { shared } from "@/content/shared"
 
-const fontSans = Inter({
+const fontSans = Poppins({
     subsets: ["latin"],
     variable: "--font-sans",
-})
+    weight: ["400", "500", "600", "700"],
+});
 
 const fontSerif = Source_Serif_4({
     subsets: ["latin"],
     variable: "--font-serif",
-})
+});
 
 const fontMono = JetBrains_Mono({
     subsets: ["latin"],
     variable: "--font-mono",
-})
+});
+
 
 /** Full contact in JSON-LD for local SEO; intentionally unobfuscated (see contact obfuscation plan). */
 const localBusinessJsonLd = {
