@@ -3,17 +3,21 @@
 @import "shadcn/tailwind.css";
 
 :root {
+  /* Raw brand colors — single source of truth */
+  --turquoise: #00d2df;
+  --dark-blue: #0096d6;
+
   --background: #fafafa;
   --foreground: #0a0a0a;
   --card: #ffffff;
   --card-foreground: #0a0a0a;
   --popover: #ffffff;
   --popover-foreground: #0a0a0a;
-  --primary: #00fcd8;
+  --primary: var(--turquoise);
   --primary-foreground: #0a0a0a;
-  --secondary: #eff5fb;
+  --secondary: #0096d6;
   --secondary-foreground: #0a0a0a;
-  --muted: #c8fff3;
+  --muted: #eff5fb;
   --muted-foreground: #677184;
   --accent: #c8fff3;
   --accent-foreground: #0a0a0a;
@@ -55,6 +59,8 @@
   --shadow-2xl: 0px 1px 16px 0px hsl(167.2681 86.9776% 89.1313% / 0.43);
   --tracking-normal: 0.02em;
   --spacing: 0.28rem;
+
+  --primary-gradient: linear-gradient(90deg, var(--turquoise), var(--dark-blue));
 }
 
 @theme inline {
@@ -91,6 +97,8 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  --background-image-primary-gradient: var(--primary-gradient);
+
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
@@ -121,8 +129,31 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
+  }
+}
+
+@layer utilities {
+  /* Fake gradient border: layer 1 = inner fill (padding-box), layer 2 = stroke (border-box). */
+  .border-primary-gradient {
+    border: 1px solid transparent;
+    background-image:
+      linear-gradient(var(--background), var(--background)),
+      var(--primary-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .border-primary-gradient:hover,
+  .border-primary-gradient[aria-expanded="true"] {
+    /* Only the inner fill changes; --primary-gradient ring stays identical. */
+    background-image:
+      linear-gradient(var(--muted), var(--muted)),
+      var(--primary-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
 }
