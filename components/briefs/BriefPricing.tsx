@@ -32,7 +32,7 @@ function PricingCard({ tier }: { tier: PricingTier }) {
         >
             {tier.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                    <Badge>{tier.badge}</Badge>
+                    <Badge variant="gradient">{tier.badge}</Badge>
                 </div>
             )}
             <CardHeader className="pb-2">
@@ -57,7 +57,7 @@ function PricingCard({ tier }: { tier: PricingTier }) {
             <CardFooter>
                 <CtaButton
                     href={tier.ctaHref}
-                    variant={tier.highlighted ? "primary" : "secondary"}
+                    variant={tier.highlighted ? "gradient" : "gradient"}
                     className="w-full"
                 >
                     {tier.cta}
