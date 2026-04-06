@@ -19,7 +19,11 @@ export function CtaBanner({ dict }: Props) {
                             {dict.description}
                         </p>
                     )}
-                    <CtaButton href={dict.ctaHref} variant="inverted" size="lg">
+                    <CtaButton
+                        href={dict.ctaHref}
+                        variant="gradient"
+                        size="lg"
+                    >
                         {dict.cta}
                     </CtaButton>
                 </div>

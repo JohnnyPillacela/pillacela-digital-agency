@@ -33,9 +33,9 @@ export default function BriefHero({ dict }: Props) {
                         {dict.cta && (
                             <CtaButton
                                 href={dict.ctaHref ?? "#contact"}
-                                variant="primary"
+                                variant="gradient"
                                 size="lg"
-                                className="mt-8"
+                                className="mt-8 w-full md:w-auto"
                             >
                                 {dict.cta}
                             </CtaButton>
