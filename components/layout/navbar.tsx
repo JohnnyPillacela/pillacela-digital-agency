@@ -49,7 +49,7 @@ export function Navbar() {
                                 {item.label}
                             </Link>
                         ))}
-                        <Button asChild size="sm">
+                        <Button asChild variant="outline" size="sm">
                             <Link href={navCtaHref}>{shared.navCta.label}</Link>
                         </Button>
                         <LanguageSwitcher />
@@ -60,7 +60,7 @@ export function Navbar() {
                         <LanguageSwitcher />
                         <Sheet open={open} onOpenChange={setOpen}>
                             <SheetTrigger asChild>
-                                <Button variant="ghost" size="icon-sm" aria-label="Open menu">
+                                <Button variant="ghost" size="icon-lg" aria-label="Open menu">
                                     <MenuIcon className="h-5 w-5" />
                                 </Button>
                             </SheetTrigger>
