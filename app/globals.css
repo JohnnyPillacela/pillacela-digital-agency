@@ -167,4 +167,23 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
+
+  /* Same gradient border as .border-primary-gradient; inner fill uses card (white) instead of page background. */
+  .border-primary-gradient-card {
+    border: 3px solid transparent;
+    background-image:
+      linear-gradient(var(--card), var(--card)),
+      var(--primary-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .border-primary-gradient-card:hover,
+  .border-primary-gradient-card[aria-expanded="true"] {
+    background-image:
+      linear-gradient(var(--muted), var(--muted)),
+      var(--primary-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
 }
