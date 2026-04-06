@@ -40,9 +40,9 @@ export default function BriefServices({ dict, stats }: Props) {
                         {dict.items.map((item: string, index: number) => (
                             <li
                                 key={index}
-                                className="flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3"
+                                className="flex items-center gap-3 rounded-lg bg-background px-4 py-3 border-primary-gradient"
                             >
-                                <ArrowRight className="size-4 shrink-0 text-primary" />
+                                <ArrowRight className="size-4 shrink-0 text-secondary" />
                                 <span className="text-sm font-medium">{item}</span>
                             </li>
                         ))}

@@ -21,9 +21,9 @@ export default function BriefAbout({ dict }: Props) {
                             {dict.highlights.map((item, i) => (
                                 <li
                                     key={i}
-                                    className="flex items-start gap-3 rounded-lg border border-border bg-muted/40 px-4 py-3"
+                                    className="flex items-start gap-3 rounded-lg bg-muted/40 px-4 py-3 border-primary-gradient"
                                 >
-                                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                                    <Check className="mt-0.5 size-4 shrink-0 text-secondary" />
                                     <span className="text-sm text-foreground">{item}</span>
                                 </li>
                             ))}
@@ -33,7 +33,7 @@ export default function BriefAbout({ dict }: Props) {
                     {/* Right: identity — who you are and why it matters */}
                     <div>
                         {dict.tagline && (
-                            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
+                            <p className="mb-3 text-lg font-semibold uppercase tracking-widest text-primary-gradient">
                                 {dict.tagline}
                             </p>
                         )}
