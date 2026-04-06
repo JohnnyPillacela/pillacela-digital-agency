@@ -47,7 +47,7 @@ export function SiteFooter() {
     const { email, phone, phoneHref, address } = useContact()
 
     return (
-        <footer className="mt-auto w-full border-t border-border bg-muted/30">
+        <footer className="mt-auto w-full border-t border-border bg-muted/50">
             <Container>
                 <div className="flex flex-col gap-8 py-12 sm:flex-row sm:items-start sm:justify-between sm:gap-12">
                     <div className="space-y-3">
