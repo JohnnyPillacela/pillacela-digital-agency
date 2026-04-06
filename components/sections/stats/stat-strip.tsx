@@ -15,7 +15,7 @@ export function StatStrip({ items }: Props) {
                     <span className="text-4xl font-bold tracking-tight md:text-5xl">
                         {item.value}
                     </span>
-                    <span className="text-sm text-muted-foreground">{item.label}</span>
+                    <span className="text-lg text-muted-foreground">{item.label}</span>
                 </div>
             ))}
         </div>
