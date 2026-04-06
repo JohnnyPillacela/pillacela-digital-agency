@@ -28,7 +28,7 @@ export default function BriefServices({ dict, stats }: Props) {
                         )}
                         {dict.cta && (
                             <div className="mt-8">
-                                <CtaButton href={dict.ctaHref ?? "#contact"} variant="secondary">
+                                <CtaButton href={dict.ctaHref ?? "#contact"} variant="gradient" size="lg">
                                     {dict.cta}
                                 </CtaButton>
                             </div>

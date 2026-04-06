@@ -47,7 +47,8 @@ export default function BriefAbout({ dict }: Props) {
                             <div className="mt-8">
                                 <CtaButton
                                     href={dict.ctaHref ?? "#services"}
-                                    variant="secondary"
+                                    variant="gradient"
+                                    size="lg"
                                 >
                                     {dict.cta}
                                 </CtaButton>
