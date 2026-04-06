@@ -21,7 +21,7 @@ export function SectionHeading({
             </h2>
 
             {description && (
-                <p className="mt-4 text-muted-foreground">
+                <p className="mt-4 text-lg text-muted-foreground">
                     {description}
                 </p>
             )}
