@@ -1,42 +1,31 @@
+import type { ComponentProps } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
-type CtaButtonVariant = "primary" | "secondary" | "inverted"
-
-type CtaButtonProps = {
+export type CtaButtonProps = Omit<ComponentProps<typeof Button>, "asChild"> & {
     href: string
     children: React.ReactNode
-    variant?: CtaButtonVariant
-    size?: "default" | "sm" | "lg"
-    className?: string
 }
 
-const invertedClasses =
-    "border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-
-/**
- * Reusable CTA button for hero, CTA banner, brief sections, etc.
- * Use variant="primary" for main CTAs (hero), "secondary" for section CTAs,
- * "inverted" when the button sits on a primary/dark background (e.g. CtaBanner).
- */
+/** Marketing CTA: `Link` + `Button`. External `http(s)` URLs open in a new tab; `data-cta-button` for tests/analytics. */
 export function CtaButton({
     href,
     children,
-    variant = "primary",
-    size = "default",
     className,
+    variant = "default",
+    size = "default",
+    ...rest
 }: CtaButtonProps) {
     const isExternal = href.startsWith("http")
-    const buttonVariant =
-        variant === "inverted" || variant === "secondary" ? "outline" : "default"
 
     return (
         <Button
             asChild
-            variant={buttonVariant}
+            variant={variant}
             size={size}
-            className={cn(variant === "inverted" && invertedClasses, className)}
+            className={className}
+            data-cta-button={true}
+            {...rest}
         >
             <Link
                 href={href}
