@@ -137,6 +137,17 @@
 }
 
 @layer utilities {
+  /* Gradient fill on glyphs (not a real `color` — uses background-clip).
+     Don’t use @apply bg-primary-gradient here: theme bg-* may not resolve inside @apply. */
+  .text-primary-gradient {
+    background-image: var(--primary-gradient);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
   /* Fake gradient border: layer 1 = inner fill (padding-box), layer 2 = stroke (border-box). */
   .border-primary-gradient {
     border: 1px solid transparent;
