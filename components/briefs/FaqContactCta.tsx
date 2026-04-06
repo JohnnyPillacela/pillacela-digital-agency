@@ -9,13 +9,13 @@ export function FaqContactCta() {
 
     return (
         <div className="flex flex-wrap justify-center gap-3">
-            <Button asChild>
+            <Button asChild variant="outline">
                 <a href={phoneHref}>
                     <Phone className="mr-2 size-4" />
                     {phone}
                 </a>
             </Button>
-            <Button variant="outline" asChild>
+            <Button asChild variant="gradient">
                 <a href={`mailto:${email}`}>
                     <Mail className="mr-2 size-4" />
                     {email}
