@@ -60,7 +60,7 @@
   --tracking-normal: 0.02em;
   --spacing: 0.28rem;
 
-  --primary-gradient: linear-gradient(90deg, var(--turquoise), var(--dark-blue));
+  --primary-gradient: linear-gradient(180deg, var(--turquoise), var(--dark-blue));
 }
 
 @theme inline {
