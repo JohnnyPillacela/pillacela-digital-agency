@@ -50,7 +50,7 @@ export default function BriefOwner({ dict }: Props) {
                         {dict.credentials && dict.credentials.length > 0 && (
                             <div className="mt-6 flex flex-wrap gap-2">
                                 {dict.credentials.map((c, i) => (
-                                    <Badge key={i} variant="outline" className="text-xs">
+                                    <Badge key={i} variant="outline" className="text-sm p-3">
                                         {c}
                                     </Badge>
                                 ))}
@@ -61,7 +61,8 @@ export default function BriefOwner({ dict }: Props) {
                             <div className="mt-8">
                                 <CtaButton
                                     href={dict.ctaHref ?? "#contact"}
-                                    variant="secondary"
+                                    variant="gradient"
+                                    size="lg"
                                 >
                                     {dict.cta}
                                 </CtaButton>
