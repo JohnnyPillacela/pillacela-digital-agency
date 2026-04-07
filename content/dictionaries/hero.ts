@@ -1,5 +1,17 @@
 import type { HeroDict } from "@/types/dictionary"
 
+const stack = [
+    "Next.js",
+    "React",
+    "Vercel",
+    "AWS",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "PostgreSQL",
+    "Docker",
+]
+
 export const heroDict = {
     en: {
         title: "Pillacela Solutions",
@@ -12,6 +24,8 @@ export const heroDict = {
         cta2: "Learn More",
         cta2Href: "#services",
         badge: "Software, Web Development & SEO",
+        techBlock: "Using the latest web technologies to build your online presence",
+        techUsed: stack,
     } satisfies HeroDict,
     es: {
         title: "Pillacela Solutions",
@@ -24,5 +38,7 @@ export const heroDict = {
         cta2: "Aprender Más",
         cta2Href: "#services",
         badge: "Software, Desarrollo Web & SEO",
+        techBlock: "Usando las últimas tecnologías web para construir tu presencia en línea",
+        techUsed: stack,
     } satisfies HeroDict,
 } as const

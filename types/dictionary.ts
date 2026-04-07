@@ -9,6 +9,8 @@ export type HeroDict = {
     cta2: string
     cta2Href: string
     badge: string
+    techBlock: string
+    techUsed: string[]
 }
 
 export type AboutDict = {
