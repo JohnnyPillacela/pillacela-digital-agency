@@ -4,26 +4,24 @@ import { ArrowRight, ChevronDown } from "lucide-react"
 import { Container } from "@/components/layout/container"
 import { Section } from "@/components/layout/section"
 import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
 import { CtaButton } from "@/components/shared/cta-button"
+import { HeroTechLogosCarousel } from "@/components/briefs/HeroTechLogosCarousel"
 import { sectionBg } from "@/config/sections"
 import { cn } from "@/lib/utils"
 import { splitOnLastSpace } from "@/utils/text-slicer"
-import type { HeroDict } from "@/types/dictionary"
+import type { HeroDict, StatsDict } from "@/types/dictionary"
 
 type Props = {
     dict: HeroDict
+    stats: StatsDict
 }
 
 // Tier 1 — split hero: copy left, image right, stats + trusted-by strip (dict-driven copy; layout matches marketing hero).
 // Headline accent: last word of `dict.title` (see splitOnLastSpace).
-export default function BriefHero({ dict }: Props) {
+export default function BriefHero({ dict, stats }: Props) {
     const { slicedText: lead, last: accent } = splitOnLastSpace(dict.title)
-    const stats = [
-        { value: "10+", label: "Lorem ipsum dolor" },
-        { value: "5+", label: "Sit amet consectetur" },
-        { value: "2+", label: "Adipiscing elit sed" },
-    ]
-    const logos = ["Lorem Corp", "Ipsum Labs", "Dolor Studio", "Sit Flow"]
+    const statItemsClipped = stats.items.slice(0, 3)
 
     return (
         <Section
@@ -59,7 +57,7 @@ export default function BriefHero({ dict }: Props) {
                             ) : null}
                         </h1>
 
-                        <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+                        <p className="mt-6 max-w-xl text-2xl text-muted-foreground">
                             {dict.subtitle}
                         </p>
 
@@ -83,23 +81,25 @@ export default function BriefHero({ dict }: Props) {
                             </Link>
                         </div>
 
-                        <div className="mt-10 flex flex-wrap gap-6 border-t border-border pt-8 md:gap-0">
-                            {stats.map((s, i) => (
-                                <div
-                                    key={i}
-                                    className={cn(
-                                        "min-w-[6.5rem] flex-1 text-center md:px-6 md:text-left",
-                                        i > 0 && "md:border-l md:border-border"
-                                    )}
-                                >
-                                    <p className="text-2xl font-bold text-primary md:text-3xl">
-                                        {s.value}
-                                    </p>
-                                    <p className="mt-1 text-xs text-muted-foreground">
-                                        {s.label}
-                                    </p>
-                                </div>
-                            ))}
+                        <Separator className="my-4 md:my-8"/>
+
+                        <div className="flex flex-wrap gap-6 md:gap-0">
+                                {statItemsClipped.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className={cn(
+                                            "flex-1 text-center md:px-6 md:text-left",
+                                            i > 0 && "md:border-l md:border-border"
+                                        )}
+                                    >
+                                        <p className="text-2xl font-semibold text-primary md:text-3xl">
+                                            {item.value}
+                                        </p>
+                                        <p className="mt-1 text-md text-muted-foreground">
+                                            {item.label}
+                                        </p>
+                                    </div>
+                                ))}
                         </div>
                     </div>
 
@@ -127,32 +127,39 @@ export default function BriefHero({ dict }: Props) {
                     </div>
                 </div>
 
-                <div className="mt-16 border-t border-border pt-10 md:mt-20">
-                    <p className="text-center text-sm text-muted-foreground">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                        eiusmod tempor.
-                    </p>
-                    <div className="mt-6 flex flex-wrap items-center justify-center gap-y-4 md:gap-0">
-                        {logos.map((name, i) => (
-                            <span
-                                key={name}
-                                className={cn(
-                                    "px-4 text-sm font-medium text-muted-foreground/80",
-                                    i > 0 && "md:border-l md:border-border"
-                                )}
+                <div className="mt-4 md:mt-8">
+                    <Separator />
+                    <div className="pt-4">
+                        <p className="text-center text-lg text-muted-foreground">
+                            {dict.techBlock}
+                        </p>
+                        <div className="mt-6 flex flex-wrap items-center justify-center gap-y-4 md:gap-0">
+                            {dict.techUsed.map((name, i) => (
+                                <span
+                                    key={`tech-used-${i}-${name}`}
+                                    className={cn(
+                                        "px-4 text-lg font-medium text-muted-foreground",
+                                        i > 0 && "md:border-l md:border-border"
+                                    )}
+                                >
+                                    {name}
+                                </span>
+                            ))}
+                        </div>
+                        <div className="mt-6">
+                            <HeroTechLogosCarousel
+                                logos={dict.techLogos}
+                            />
+                        </div>
+                        <div className="mt-8 flex justify-center">
+                            <a
+                                href="#pain-points"
+                                className="inline-flex text-primary transition-transform hover:translate-y-0.5"
+                                aria-label="Scroll to next section"
                             >
-                                {name}
-                            </span>
-                        ))}
-                    </div>
-                    <div className="mt-8 flex justify-center">
-                        <a
-                            href="#pain-points"
-                            className="inline-flex text-primary transition-transform hover:translate-y-0.5"
-                            aria-label="Scroll to next section"
-                        >
-                            <ChevronDown className="size-6" strokeWidth={2.5} />
-                        </a>
+                                <ChevronDown className="size-6" strokeWidth={2.5} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </Container>
