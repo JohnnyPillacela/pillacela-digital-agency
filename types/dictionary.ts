@@ -6,6 +6,9 @@ export type HeroDict = {
     sideContent?: string
     cta?: string
     ctaHref?: string
+    cta2: string
+    cta2Href: string
+    badge: string
 }
 
 export type AboutDict = {

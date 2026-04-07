@@ -9,6 +9,9 @@ export const heroDict = {
             "If you run a local business, you deserve more than a template and a prayer. We build clear, fast sites on top of the latest web technologies, with SEO tuned for how your customers actually look you up — “near me,” maps, and Google. Have something specific in mind? We’re not married to a menu. Reach out, describe your shop or job site, and we’ll tell you honestly what fits.",
         cta: "Book a Consultation",
         ctaHref: "#contact",
+        cta2: "Learn More",
+        cta2Href: "#services",
+        badge: "Software, Web Development &SEO",
     } satisfies HeroDict,
     es: {
         title: "Pillacela Solutions",
@@ -18,5 +21,8 @@ export const heroDict = {
             "Si tienes un negocio local, mereces más que una plantilla al azar. Armamos sitios claros y rápidos con las últimas tecnologías web y SEO pensado en cómo tus clientes te buscan — “cerca de mí,” mapas y Google. ¿Tienes algo específico en mente? No nos atamos a un menú fijo. Escríbenos, cuéntanos tu taller o tu local, y te decimos con franqueza qué encaja.",
         cta: "Reservar Consulta",
         ctaHref: "#contact",
+        cta2: "Aprender Más",
+        cta2Href: "#services",
+        badge: "Software, Desarrollo Web & SEO",
     } satisfies HeroDict,
 } as const
