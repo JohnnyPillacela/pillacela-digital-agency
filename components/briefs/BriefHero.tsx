@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ChevronDown } from "lucide-react"
+import { ArrowRight, ChevronDown, ChevronRight } from "lucide-react"
 import { Container } from "@/components/layout/container"
 import { Section } from "@/components/layout/section"
 import { Badge } from "@/components/ui/badge"
@@ -27,11 +27,10 @@ export default function BriefHero({ dict, stats }: Props) {
         <Section
             id="hero"
             variant={sectionBg.hero}
-            className="relative overflow-hidden lg:py-10"
+            className="relative overflow-hidden py-4 md:py-8 lg:py-10"
         >
-
             <div
-                className="bg-hero-radial-glow pointer-events-none absolute inset-y-0 right-0 z-0 w-[55%]"
+                className="bg-hero-radial-glow pointer-events-none absolute inset-y-0 right-0 z-0 w-[55%] hidden md:block"
                 aria-hidden
             />
             <Container className="relative z-10">
@@ -39,7 +38,7 @@ export default function BriefHero({ dict, stats }: Props) {
                     <div className="text-left">
                         <Badge
                             variant="outline"
-                            className="mb-6 h-auto gap-2 py-2 text-sm font-semibold text-foreground uppercase"
+                            className="my-2 md:my-4 h-auto gap-2 py-1 md:py-2 text-xs md:text-sm font-semibold text-foreground uppercase"
                         >
                             <span
                                 className="size-2 shrink-0 rounded-full bg-primary-gradient"
@@ -47,7 +46,7 @@ export default function BriefHero({ dict, stats }: Props) {
                             />
                             {dict.badge}
                         </Badge>
-                        <h1 className="text-6xl font-bold tracking-tight text-foreground md:text-5xl">
+                        <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
                             {lead}
                             {accent != null && accent.length > 0 ? (
                                 <>
@@ -57,27 +56,25 @@ export default function BriefHero({ dict, stats }: Props) {
                             ) : null}
                         </h1>
 
-                        <p className="mt-6 max-w-xl text-2xl text-muted-foreground">
+                        <p className="my-2 md:my-5 max-w-xl text-md md:text-2xl text-muted-foreground">
                             {dict.subtitle}
                         </p>
 
-                        <div className="mt-8 flex flex-wrap items-center gap-6">
-                            {dict.cta && (
-                                <CtaButton
-                                    href={dict.ctaHref ?? "#contact"}
-                                    variant="gradient"
-                                    size="lg"
-                                    className="rounded-full px-6 text-base font-semibold"
-                                >
-                                    {dict.cta}
-                                    <ArrowRight className="size-4" aria-hidden />
-                                </CtaButton>
-                            )}
+                        <div className="py-2 md:py-2 flex flex-wrap items-center justify-start gap-4 mx-auto">
+                            <CtaButton
+                                href={dict.ctaHref ?? "#contact"}
+                                variant="gradient"
+                                size="lg"
+                                className="rounded-full mx-2 text-base font-semibold text-center md:text-left"
+                            >
+                                {dict.cta}
+                                <ChevronDown className="size-4" strokeWidth={2.5} />
+                            </CtaButton>
                             <Link
                                 href={dict.cta2Href}
                                 className="text-sm font-medium text-foreground underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
                             >
-                                {dict.cta2} &gt;
+                                {dict.cta2} <span>→</span>
                             </Link>
                         </div>
 
@@ -104,11 +101,8 @@ export default function BriefHero({ dict, stats }: Props) {
                     </div>
 
                     <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-                        <div
-                            className="pointer-events-none absolute -top-6 -right-2 size-28 bg-[radial-gradient(circle_at_1px_1px,var(--color-primary)/35%_1px,transparent_0)] opacity-70 [background-size:10px_10px] md:size-36"
-                            aria-hidden
-                        />
                         <div className="relative">
+                            {/* L frame shadow */}
                             <div
                                 className="pointer-events-none absolute -bottom-2 -left-2 z-0 h-[78%] w-[78%] rounded-bl-[2.25rem] border-b-[5px] border-l-[5px] border-primary shadow-[0_0_28px_rgba(0,210,223,0.35)]"
                                 aria-hidden
