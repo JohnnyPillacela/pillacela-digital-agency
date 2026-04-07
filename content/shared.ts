@@ -3,12 +3,12 @@ export const shared = {
     siteName: "Pillacela Solutions",
     siteDescription:
         "Online presence and SEO for local businesses — contractors, bakeries, shops, and more. More than a digital business card.",
-    url: "https://example.com",
+    url: "https://pillacela.com",
     contact: {
-        email: "hello@example.com",
-        phone: "(555) 123-4567",
-        phoneHref: "tel:+15551234567",
-        address: "123 Business Street, City, State",
+        email: "johnnybelesaca@gmail.com",
+        phone: "(908) 451-0788",
+        phoneHref: "tel:+19084510788",
+        address: "Elizabeth, NJ, USA",
     },
     social: {
         instagram: "",

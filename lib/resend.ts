@@ -13,7 +13,7 @@ export async function sendLeadEmail(data: {
     return resend.emails.send({
         from: "onboarding@resend.dev",
         to: process.env.CONTACT_EMAIL!,
-        subject: `New Lead - Pillacela Digital Agency (PDA)`,
+        subject: `New Lead - Pillacela Solutions (PS)`,
         react: NewLeadEmail(data),
     })
 }
