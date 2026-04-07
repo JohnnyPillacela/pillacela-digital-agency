@@ -45,6 +45,11 @@ export default function BriefOwner({ dict }: Props) {
                         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
                             {dict.name}
                         </h2>
+                        {dict.credibilityLine && (
+                            <p className="mt-3 max-w-prose text-sm font-medium leading-snug text-foreground">
+                                {dict.credibilityLine}
+                            </p>
+                        )}
                         <p className="mt-4 text-muted-foreground">{dict.bio}</p>
 
                         {dict.credentials && dict.credentials.length > 0 && (

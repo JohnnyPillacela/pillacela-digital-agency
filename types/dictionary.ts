@@ -201,6 +201,8 @@ export type ProcessDict = {
 export type OwnerDict = {
     name: string
     title?: string
+    /** Short credibility hook (e.g. prior roles) — shown under the name, above the bio */
+    credibilityLine?: string
     bio: string
     imageUrl?: string
     credentials?: string[]
