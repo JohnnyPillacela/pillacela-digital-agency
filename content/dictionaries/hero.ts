@@ -12,6 +12,16 @@ const stack = [
     "Docker",
 ]
 
+const stackLogos = [
+    "/stack-logos/nextjs-2.svg",
+    "/stack-logos/960px-React-icon.png",
+    "/stack-logos/vercel-logo.png",
+    "/stack-logos/aws-logo.png",
+    "/stack-logos/tailwind-logo.png",
+    "/stack-logos/typescript-logo.png",
+    "/stack-logos/docker-logo.png",
+]
+
 export const heroDict = {
     en: {
         title: "Pillacela Solutions",
@@ -26,6 +36,7 @@ export const heroDict = {
         badge: "Software, Web Development & SEO",
         techBlock: "Using the latest web technologies to build your online presence",
         techUsed: stack,
+        techLogos: stackLogos,
     } satisfies HeroDict,
     es: {
         title: "Pillacela Solutions",
@@ -40,5 +51,6 @@ export const heroDict = {
         badge: "Software, Desarrollo Web & SEO",
         techBlock: "Usando las últimas tecnologías web para construir tu presencia en línea",
         techUsed: stack,
+        techLogos: stackLogos,
     } satisfies HeroDict,
 } as const

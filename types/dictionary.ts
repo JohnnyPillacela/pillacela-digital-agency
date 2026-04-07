@@ -11,6 +11,7 @@ export type HeroDict = {
     badge: string
     techBlock: string
     techUsed: string[]
+    techLogos: string[]
 }
 
 export type AboutDict = {
