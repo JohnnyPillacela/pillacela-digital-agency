@@ -17,14 +17,14 @@ export const workDict = {
                 title: "LPS Construction LLC",
                 tag: "Website & SEO",
                 image: "/website-screenshots/pillacela-hero.png",
-                href: "https://www.pillacela.com",
+                href: "https://www.pillacelabuilds.com",
             },
             {
                 title: "Bloom Floral Studio",
                 tag: "Web Design",
                 // Placeholder — swap for a real project screenshot when you have it.
                 image: "https://picsum.photos/seed/bloom-floral/800/450",
-                href: "https://www.pillacela.com",
+                href: "https://www.pillacelabuilds.com",
             },
             {
                 title: "Reyes Auto Detailing",
@@ -50,13 +50,13 @@ export const workDict = {
                 title: "LPS Construction LLC",
                 tag: "Website & SEO",
                 image: "/website-screenshots/pillacela-hero.png",
-                href: "https://www.pillacela.com",
+                href: "https://www.pillacelabuilds.com",
             },
             {
                 title: "Bloom Floral Studio",
                 tag: "Diseño Web",
                 image: "https://picsum.photos/seed/bloom-floral/800/450",
-                href: "https://www.pillacela.com",
+                href: "https://www.pillacelabuilds.com",
             },
             {
                 title: "Reyes Auto Detailing",
