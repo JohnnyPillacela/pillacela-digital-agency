@@ -4,25 +4,25 @@ export const painPointsDict = {
     en: {
         title: "Sound familiar?",
         items: [
-            "Your website isn't showing up on Google searches",
-            "Visitors land on your site and leave without calling",
-            "Your site looks outdated compared to your competitors",
-            "You paid for a website once but never got real results from it",
-            "You don't have a bilingual site and you're missing Spanish-speaking customers",
+            "Your shop or crew doesn’t show up when locals search on Google",
+            "Your site is basically a digital business card — it doesn’t answer real questions",
+            "Competitors look more legit online even when your work is stronger",
+            "You’re not sure how to describe what you need — you just know it should be better",
+            "You’re missing Spanish-speaking customers without a proper bilingual presence",
         ],
         closing:
-            "If any of these sound familiar, you're in the right place. We built this agency to fix exactly these problems — fast timelines, bilingual support, and results you can measure.",
+            "If any of this hits home, you’re who we built Pillacela Solutions for — local companies that need a real online presence, solid SEO, and someone who will listen instead of reading from a script.",
     } satisfies PainPointsDict,
     es: {
         title: "¿Te suena conocido?",
         items: [
-            "Tu sitio web no aparece en las búsquedas de Google",
-            "Los visitantes llegan a tu sitio y se van sin llamar",
-            "Tu sitio se ve desactualizado comparado con el de tus competidores",
-            "Pagaste por un sitio web una vez pero nunca obtuviste resultados reales",
-            "No tienes un sitio bilingüe y estás perdiendo clientes de habla inglesa",
+            "Tu taller o negocio no aparece cuando la gente del barrio busca en Google",
+            "Tu sitio es casi solo una tarjeta digital — no responde lo que de verdad importa",
+            "La competencia se ve más seria en línea aunque tu trabajo sea mejor",
+            "No sabes cómo decir qué necesitas — solo que debería verse mejor",
+            "Pierdes clientes hispanohablantes sin una presencia bilingüe bien hecha",
         ],
         closing:
-            "Si algo de esto te suena familiar, estás en el lugar correcto. Creamos esta agencia para resolver exactamente estos problemas — plazos rápidos, soporte bilingüe y resultados medibles.",
+            "Si algo de esto te resuena, para eso está Pillacela Solutions — negocios locales que necesitan presencia en línea de verdad, SEO sólido y alguien que escuche en lugar de leer un guion.",
     } satisfies PainPointsDict,
 } as const

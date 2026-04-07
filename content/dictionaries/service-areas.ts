@@ -3,7 +3,8 @@ import type { ServiceAreasDict } from "@/types/dictionary"
 export const serviceAreasDict = {
     en: {
         title: "Areas We Serve",
-        description: "Based in Elizabeth, NJ — working with businesses across New Jersey and remotely nationwide.",
+        description:
+            "Rooted in Elizabeth, NJ — partnering with local construction companies, shops, food businesses, and service pros across the area and remotely when it makes sense.",
         items: [
             { city: "Elizabeth",        state: "NJ", slug: "elizabeth" },
             { city: "Newark",      state: "NJ", slug: "newark" },
@@ -13,11 +14,12 @@ export const serviceAreasDict = {
             { city: "Roselle Park", state: "NJ", slug: "roselle-park" },
             { city: "Cranford", state: "NJ", slug: "cranford" },
         ],
-        note: "Serving clients remotely across New Jersey.",
+        note: "Local businesses across New Jersey — and remote projects when the fit is right.",
     } satisfies ServiceAreasDict,
     es: {
         title: "Áreas que Atendemos",
-        description: "Con base en Elizabeth, NJ — trabajamos con negocios en New Jersey y a distancia en todo el país.",
+        description:
+            "Con base en Elizabeth, NJ — trabajamos con empresas de construcción locales, tiendas, comida y oficios en la zona y a distancia cuando tiene sentido.",
         items: [
             { city: "Elizabeth",        state: "NJ", slug: "elizabeth" },
             { city: "Newark",      state: "NJ", slug: "newark" },
@@ -27,6 +29,6 @@ export const serviceAreasDict = {
             { city: "Roselle Park", state: "NJ", slug: "roselle-park" },
             { city: "Cranford", state: "NJ", slug: "cranford" },
         ],
-        note: "Atendemos clientes a distancia en todo New Jersey.",
+        note: "Negocios locales en todo New Jersey — y proyectos remotos cuando encaja.",
     } satisfies ServiceAreasDict,
 } as const

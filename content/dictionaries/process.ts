@@ -3,62 +3,63 @@ import type { ProcessDict } from "@/types/dictionary"
 export const processDict = {
     en: {
         title: "How It Works",
-        description: "A simple, proven process — from first conversation to live site.",
+        description:
+            "A straight path from first conversation to launch — built around how your local business actually operates.",
         items: [
             {
                 step: "01",
                 title: "Discovery",
                 description:
-                    "We learn about your business, goals, and customers in a quick 30-minute call.",
+                    "We learn what you do, who you serve, and what “more than a business card” means for your shop or crew — in a focused call.",
             },
             {
                 step: "02",
                 title: "Design",
                 description:
-                    "We build a clean, branded design tailored to your industry and client expectations.",
+                    "We shape a clear layout and story: services, proof, hours, areas — whatever your customers need before they call.",
             },
             {
                 step: "03",
                 title: "Build",
                 description:
-                    "Your site is developed with performance, SEO, and mobile-first in mind — fast by default.",
+                    "Your site ships with the latest web technologies, mobile-first layout, and SEO foundations for local search.",
             },
             {
                 step: "04",
                 title: "Launch",
                 description:
-                    "We go live, submit your sitemap to Google, and hand you full ownership of everything.",
+                    "We go live, help search engines find you, and hand over ownership. Need something extra later? We’re a message away.",
             },
         ],
     } satisfies ProcessDict,
     es: {
         title: "Cómo Funciona",
         description:
-            "Un proceso simple y probado — desde la primera conversación hasta el sitio en vivo.",
+            "Un camino directo desde la primera charla hasta el lanzamiento — pensado en cómo opera tu negocio local de verdad.",
         items: [
             {
                 step: "01",
                 title: "Descubrimiento",
                 description:
-                    "Conocemos tu negocio, objetivos y clientes en una llamada rápida de 30 minutos.",
+                    "Entendemos qué haces, a quién sirves y qué significa ‘más que una tarjeta’ para tu taller o local — en una llamada enfocada.",
             },
             {
                 step: "02",
                 title: "Diseño",
                 description:
-                    "Creamos un diseño limpio y con tu identidad de marca, adaptado a tu industria.",
+                    "Armamos estructura e historia clara: servicios, pruebas, horarios, zonas — lo que tu cliente necesita antes de llamar.",
             },
             {
                 step: "03",
                 title: "Desarrollo",
                 description:
-                    "Tu sitio se construye con rendimiento, SEO y diseño móvil como prioridad — rápido por defecto.",
+                    "Tu sitio sale con tecnología web actual, diseño móvil primero y bases de SEO para búsqueda local.",
             },
             {
                 step: "04",
                 title: "Lanzamiento",
                 description:
-                    "Publicamos el sitio, enviamos tu mapa al buscador y te entregamos todo lo que es tuyo.",
+                    "Publicamos, ayudamos a que los buscadores te encuentren y te entregamos el control. ¿Algo extra después? Estamos a un mensaje.",
             },
         ],
     } satisfies ProcessDict,

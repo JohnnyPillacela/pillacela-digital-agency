@@ -3,7 +3,7 @@ import type { TrustBadgesDict } from "@/types/dictionary"
 export const trustBadgesDict = {
     en: {
         items: [
-            { label: "No long-term contracts" },
+            { label: "Built for local businesses first" },
             { label: "30-day satisfaction guarantee" },
             { label: "Launch in 2–3 weeks" },
             { label: "You own everything we build" },
@@ -11,7 +11,7 @@ export const trustBadgesDict = {
     } satisfies TrustBadgesDict,
     es: {
         items: [
-            { label: "Sin contratos a largo plazo" },
+            { label: "Pensado primero en negocios locales" },
             { label: "Garantía de satisfacción de 30 días" },
             { label: "Lanzamiento en 2–3 semanas" },
             { label: "Eres dueño de todo lo que construimos" },

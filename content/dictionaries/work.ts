@@ -3,7 +3,8 @@ import type { WorkDict } from "@/types/dictionary"
 export const workDict = {
     en: {
         title: "Our Work",
-        description: "A selection of projects we've built for local businesses.",
+        description:
+            "A sample of sites for local trades, construction, and businesses that needed presence and SEO — not just a link in their email signature.",
         visitSiteLabel: "Visit live site",
         items: [
             {
@@ -35,7 +36,8 @@ export const workDict = {
     } satisfies WorkDict,
     es: {
         title: "Nuestro Trabajo",
-        description: "Una selección de proyectos que hemos desarrollado para negocios locales.",
+        description:
+            "Una muestra de sitios para oficios locales, construcción y negocios que necesitaban presencia y SEO — no solo un enlace en la firma del correo.",
         visitSiteLabel: "Ver sitio en vivo",
         items: [
             {

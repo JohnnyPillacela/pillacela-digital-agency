@@ -1,8 +1,8 @@
 /** Non-translatable site config: brand, contact, social, URLs */
 export const shared = {
-    siteName: "Pillacela Agency",
+    siteName: "Pillacela Solutions",
     siteDescription:
-        "Modern websites for small businesses built with performance, SEO, and simplicity in mind.",
+        "Online presence and SEO for local businesses — contractors, bakeries, shops, and more. More than a digital business card.",
     url: "https://example.com",
     contact: {
         email: "hello@example.com",

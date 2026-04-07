@@ -2,8 +2,9 @@ import type { TestimonialsDict } from "@/types/dictionary"
 
 export const testimonialsDict = {
     en: {
-        title: "What Our Clients Say",
-        description: "Real results from real businesses we've had the pleasure of working with.",
+        title: "What Local Clients Say",
+        description:
+            "Shops, trades, and owners who needed more than a placeholder online — real presence, real results.",
         visitSiteLabel: "Visit client site",
         items: [
             {
@@ -30,8 +31,9 @@ export const testimonialsDict = {
         ],
     } satisfies TestimonialsDict,
     es: {
-        title: "Lo Que Dicen Nuestros Clientes",
-        description: "Resultados reales de negocios reales con los que hemos tenido el placer de trabajar.",
+        title: "Lo Que Dicen Clientes Locales",
+        description:
+            "Tiendas, oficios y dueños que necesitaban más que un espacio vacío en línea — presencia y resultados de verdad.",
         visitSiteLabel: "Visitar sitio del cliente",
         items: [
             {

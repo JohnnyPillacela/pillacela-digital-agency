@@ -3,17 +3,19 @@ import type { PricingDict } from "@/types/dictionary"
 export const pricingDict = {
     en: {
         title: "Simple, Transparent Pricing",
-        description: "Choose the tier that fits your project. No hidden fees.",
+        description:
+            "Starting points for local businesses — not a cage. If your build doesn’t fit a tier, tell us what you’re picturing and we’ll quote it fairly.",
         badge: "Pricing",
         tiers: [
             {
                 name: "Tier 1",
                 price: "$199",
-                description: "A clean, single-page website to get you online fast.",
+                description:
+                    "A focused single-page presence — enough to look legit, explain what you do, and start showing up in search.",
                 features: [
                     "One-page website",
                     "English or Spanish (single language)",
-                    "Basic on-page SEO",
+                    "On-page SEO foundations",
                     "Mobile responsive",
                 ],
                 cta: "Get Started",
@@ -22,7 +24,8 @@ export const pricingDict = {
             {
                 name: "Tier 2",
                 price: "$499",
-                description: "A bilingual, multi-page site built to be found.",
+                description:
+                    "A bilingual, multi-page site for shops and crews who need room to tell the full story — with SEO in both languages.",
                 features: [
                     "Multi-page website",
                     "English + Spanish (bilingual)",
@@ -37,13 +40,14 @@ export const pricingDict = {
             },
             {
                 name: "Tier 3",
-                price: "From $999",
-                description: "A fully custom build for complex or e-commerce needs.",
+                price: "From $1500",
+                description:
+                    "Custom scope for growing local brands — more pages, richer presence, or specific features. Describe what you need; we’ll map it.",
                 features: [
-                    "Custom or e-commerce website",
+                    "Custom multi-page or specialized build",
                     "Bilingual (English + Spanish)",
-                    "Advanced SEO + analytics setup",
-                    "CMS integration",
+                    "Deeper SEO + analytics setup",
+                    "CMS or content workflows when it fits",
                     "Priority support",
                 ],
                 cta: "Let's Talk",
@@ -53,17 +57,19 @@ export const pricingDict = {
     } satisfies PricingDict,
     es: {
         title: "Precios Simples y Transparentes",
-        description: "Elige el nivel que se ajuste a tu proyecto. Sin costos ocultos.",
+        description:
+            "Puntos de partida para negocios locales — no una jaula. Si tu proyecto no calza en un nivel, cuéntanos y cotizamos con sentido.",
         badge: "Precios",
         tiers: [
             {
                 name: "Nivel 1",
                 price: "$199",
-                description: "Un sitio web de una sola página para que estés en línea rápidamente.",
+                description:
+                    "Presencia de una página enfocada — suficiente para verse serio, explicar tu oferta y empezar a aparecer en búsqueda.",
                 features: [
                     "Sitio web de una página",
                     "Inglés o español (un solo idioma)",
-                    "SEO básico en la página",
+                    "Bases de SEO en la página",
                     "Diseño adaptable a móviles",
                 ],
                 cta: "Comenzar",
@@ -72,7 +78,8 @@ export const pricingDict = {
             {
                 name: "Nivel 2",
                 price: "$499",
-                description: "Un sitio bilingüe de varias páginas diseñado para ser encontrado.",
+                description:
+                    "Sitio bilingüe multipágina para locales y oficios que necesitan espacio para contar la historia completa — con SEO en ambos idiomas.",
                 features: [
                     "Sitio web de varias páginas",
                     "Inglés + español (bilingüe)",
@@ -87,13 +94,14 @@ export const pricingDict = {
             },
             {
                 name: "Nivel 3",
-                price: "Desde $999",
-                description: "Un desarrollo personalizado para necesidades complejas o e-commerce.",
+                price: "Desde $1500",
+                description:
+                    "Alcance a medida para marcas locales en crecimiento — más páginas, presencia más rica o funciones puntuales. Cuéntanos qué necesitas; lo mapeamos.",
                 features: [
-                    "Sitio personalizado o e-commerce",
+                    "Sitio multipágina personalizado o necesidades específicas",
                     "Bilingüe (inglés + español)",
-                    "SEO avanzado + configuración de analítica",
-                    "Integración con CMS",
+                    "SEO más profundo + configuración de analítica",
+                    "CMS o flujos de contenido cuando aplique",
                     "Soporte prioritario",
                 ],
                 cta: "Hablemos",

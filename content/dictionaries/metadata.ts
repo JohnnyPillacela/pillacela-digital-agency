@@ -5,44 +5,44 @@ export const metadataDict = {
         home: {
             title: "Home",
             description:
-                "Modern websites for small businesses built with performance, SEO, and simplicity in mind.",
+                "Websites and SEO for local businesses — construction, bakeries, shops, and more. An online presence that’s more than a digital business card.",
         },
         services: {
             title: "Services",
             description:
-                "Web design, SEO optimization, branding, landing pages, and e-commerce solutions tailored for your business.",
+                "Local business websites, SEO, and tailored help — tell us what you need; we don’t stick to a rigid menu.",
         },
         about: {
             title: "About",
             description:
-                "Learn about who we are, what drives us, and how we help small businesses grow online.",
+                "Pillacela Solutions helps local companies build a real online presence with modern web tech and search visibility.",
         },
         contact: {
             title: "Contact",
             description:
-                "Get in touch to discuss your project. We'd love to hear about your business and how we can help.",
+                "Reach out about your local business — contractors, retail, food, services. Describe what you want built or improved.",
         },
     } satisfies MetadataDict,
     es: {
         home: {
             title: "Inicio",
             description:
-                "Sitios web modernos para pequeñas empresas construidos con rendimiento, SEO y simplicidad.",
+                "Sitios web y SEO para negocios locales — construcción, panaderías, tiendas y más. Una presencia en línea que va más allá de la tarjeta digital.",
         },
         services: {
             title: "Servicios",
             description:
-                "Diseño web, optimización SEO, branding, landing pages y soluciones e-commerce a medida para tu negocio.",
+                "Sitios para negocios locales, SEO y apoyo a medida — cuéntanos qué necesitas; no nos atamos a un menú rígido.",
         },
         about: {
             title: "Sobre Nosotros",
             description:
-                "Conoce quiénes somos, qué nos impulsa y cómo ayudamos a las pequeñas empresas a crecer en línea.",
+                "Pillacela Solutions ayuda a empresas locales a construir presencia online real con tecnología web actual y visibilidad en buscadores.",
         },
         contact: {
             title: "Contacto",
             description:
-                "Contáctanos para hablar de tu proyecto. Nos encantaría conocer tu negocio y cómo podemos ayudarte.",
+                "Escríbenos sobre tu negocio local — oficios, retail, comida, servicios. Describe qué quieres construir o mejorar.",
         },
     } satisfies MetadataDict,
 } as const

@@ -3,30 +3,32 @@ import type { AboutDict } from "@/types/dictionary"
 export const aboutDict = {
     en: {
         title: "About Us",
-        tagline: "Small team. Real results.",
+        tagline: "Local businesses. Real presence.",
         description:
-            "We are a small agency focused on helping businesses grow online. With years of experience in web design, development, and digital strategy, we craft solutions that are fast, simple, and built to last.",
+            "Pillacela Solutions exists for the crews, kitchens, counters, and corners that keep communities running. We build online presences that do real work — credibility, services, hours, proof, and calls — layered with SEO so neighbors and new customers can find you. It’s more than looking legit; it’s being findable and useful when someone pulls out their phone on the sidewalk.",
         highlights: [
-            "Fast turnaround — most sites launch in 2–3 weeks",
-            "No bloated agency overhead — you work directly with us",
-            "Built for performance, SEO, and long-term maintainability",
-            "Bilingual support in English and Spanish",
+            "Built for local trades, retail, food, and service businesses — not generic “startup” fluff",
+            "An online presence that goes past a digital business card: story, trust, and search visibility",
+            "Latest web technologies and SEO — structured so Google and maps can actually help you",
+            "Tell us what you need; we’ll shape a path that fits your shop, not a one-size script",
+            "Bilingual English & Spanish — how many of your customers actually browse",
         ],
-        cta: "See what we can build for you",
-        ctaHref: "#services",
+        cta: "Tell us about your business",
+        ctaHref: "#contact",
     } satisfies AboutDict,
     es: {
         title: "Sobre Nosotros",
-        tagline: "Equipo pequeño. Resultados reales.",
+        tagline: "Negocios locales. Presencia real.",
         description:
-            "Somos una agencia pequeña enfocada en ayudar a las empresas a crecer en línea. Con años de experiencia en diseño web, desarrollo y estrategia digital, creamos soluciones rápidas, simples y hechas para durar.",
+            "Pillacela Solutions está para las cuadrillas, cocinas, mostradores y rincones que mantienen vivos los barrios. Creamos presencias en línea que trabajan de verdad — credibilidad, servicios, horarios, pruebas y llamadas — con SEO para que vecinos y clientes nuevos te encuentren. Es más que verse bien: es ser útil y localizable cuando alguien saca el teléfono en la acera.",
         highlights: [
-            "Entrega rápida — la mayoría de los sitios se lanzan en 2–3 semanas",
-            "Sin gastos de agencia inflados — trabajas directamente con nosotros",
-            "Construido para rendimiento, SEO y mantenibilidad a largo plazo",
-            "Soporte bilingüe en inglés y español",
+            "Pensado para oficios locales, retail, comida y servicios — no humo de “startup” genérico",
+            "Presencia online que va más allá de la tarjeta digital: historia, confianza y visibilidad en búsqueda",
+            "Últimas tecnologías web y SEO — estructurado para que Google y mapas te ayuden de verdad",
+            "Cuéntanos qué necesitas; armamos un camino que encaje con tu negocio, no un guion único",
+            "Bilingüe inglés y español — como buscan muchos de tus clientes",
         ],
-        cta: "Mira lo que podemos construir para ti",
-        ctaHref: "#services",
+        cta: "Cuéntanos sobre tu negocio",
+        ctaHref: "#contact",
     } satisfies AboutDict,
 } as const

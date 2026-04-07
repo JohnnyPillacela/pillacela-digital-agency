@@ -4,100 +4,132 @@ export const faqDict = {
     en: {
         title: "Frequently Asked Questions",
         badge: "FAQ",
-        description: "Everything you need to know about working with us.",
+        description:
+            "Practical answers for local owners — plus room for your own questions. If your situation isn’t on the list, that’s fine: reach out anyway.",
         ctaTitle: "Still have questions?",
-        ctaDescription: "We're happy to help. Reach out directly and we'll get back to you quickly.",
+        ctaDescription:
+            "Every shop is a little different. Tell us what you’re picturing — we’re happy to riff and see what’s possible.",
         cta: "Contact us",
         ctaHref: "#contact",
         items: [
             // General
             {
-                question: "What services do you offer?",
-                answer: "We design and build websites, create brand identities, and run SEO campaigns for small and local businesses. Everything is handled in-house — no outsourcing.",
+                question: "Who do you work with?",
+                answer:
+                    "Local businesses first: construction and trades, bakeries and food spots, retail shops, professional services — anyone who relies on reputation, foot traffic, or “near me” searches. If you’re not sure you fit, ask. We’d rather have a real conversation than stick to a rigid list.",
+            },
+            {
+                question: "What do you actually build?",
+                answer:
+                    "Websites that act like a real online presence: who you are, what you offer, proof, and clear ways to get in touch — not a thin digital business card. We use the latest web technologies and SEO so your site loads well, reads well, and can show up in search and maps. Need something off-menu? Describe it; we’ll say if we’re the right fit.",
             },
             {
                 question: "How do we get started?",
-                answer: "Just reach out through the contact form. We'll schedule a quick call to learn about your business and put together a proposal within a few days.",
+                answer:
+                    "Use the form. Tell us your business type, area, and what you want visitors to do (call, book, visit, order). We’ll set up a short call, then send a clear proposal — usually within a few days. No script you have to match.",
             },
             {
                 question: "How much does a project cost?",
-                answer: "Pricing depends on scope. A basic website starts around $1,500, while full branding and SEO packages vary. We'll give you a clear, itemized quote before any work begins.",
+                answer:
+                    "Scope sets the price — pages, languages, how much custom storytelling, and any extras you want. You’ll see a line-by-line estimate before you commit. If you’re budget-conscious, say so; we can often phase things sensibly.",
             },
             // Project
             {
                 question: "How long does a website take?",
-                answer: "Most sites go live within 2–4 weeks. Larger projects with custom features can take longer. We'll agree on a timeline upfront and keep you updated throughout.",
+                answer:
+                    "Many local business sites go live in about 2 to 4 days once we have your content direction. Bigger stories or more sections take longer — we’ll agree on dates up front.",
             },
             {
                 question: "How many revisions are included?",
-                answer: "Every project includes two rounds of revisions. We find that's enough to get things right without scope creep. Additional rounds can be added if needed.",
+                answer:
+                    "Two structured revision rounds are standard — enough to get details right without endless loops. More passes are possible if we scope them.",
             },
             {
                 question: "What do you need from me?",
-                answer: "Mostly your time for a few conversations and any existing assets — logo, photos, brand colors. If you don't have those yet, we can help create them.",
+                answer:
+                    "A bit of your time, plus what you have: logo, photos of jobs or products, hours, service areas, rough copy. Missing pieces? We’ll help you gather simple material so launch doesn’t stall.",
             },
             // Support
             {
                 question: "What happens after the site launches?",
-                answer: "We offer a 30-day post-launch window to fix any bugs at no charge. After that, we have affordable maintenance plans for updates, backups, and ongoing changes.",
+                answer:
+                    "Thirty days of bug fixes included. After that, we can keep things fresh with light updates — seasonal hours, new photos, small copy tweaks — on terms that make sense for you.",
             },
             {
-                question: "Do you guarantee your work?",
-                answer: "Yes. We stand behind everything we deliver. If something isn't right, we'll fix it. Our goal is a long-term relationship, not a one-time transaction.",
+                question: "Do you stand behind the work?",
+                answer:
+                    "Yes. If something’s wrong, we fix it. Local business is word-of-mouth; we’re in it for relationships, not one-off invoices.",
             },
             {
-                question: "Can you help if I already have a website?",
-                answer: "Absolutely. We can redesign, improve performance, fix issues, or take over ongoing maintenance for existing sites — regardless of who built them.",
+                question: "I already have a site — can you help?",
+                answer:
+                    "Often. We can refresh the design, tighten performance, improve local SEO, or take over updates. We’ll look at what you have and recommend the smartest next step.",
             },
         ],
     } satisfies FaqDict,
     es: {
         title: "Preguntas Frecuentes",
         badge: "FAQ",
-        description: "Todo lo que necesitas saber sobre cómo trabajamos.",
+        description:
+            "Respuestas prácticas para dueños locales — y espacio para tus propias dudas. Si tu caso no está en la lista, igual escríbenos.",
         ctaTitle: "¿Aún tienes preguntas?",
-        ctaDescription: "Estamos aquí para ayudarte. Contáctanos directamente y te responderemos pronto.",
+        ctaDescription:
+            "Cada negocio es distinto. Cuéntanos qué imaginas — con gusto vemos qué es posible.",
         cta: "Contáctanos",
         ctaHref: "#contact",
         items: [
             // General
             {
-                question: "¿Qué servicios ofrecen?",
-                answer: "Diseñamos y desarrollamos sitios web, creamos identidades de marca y gestionamos campañas de SEO para negocios locales y pequeñas empresas. Todo se maneja internamente, sin subcontratación.",
+                question: "¿Con quién trabajan?",
+                answer:
+                    "Prioridad a negocios locales: construcción y oficios, panaderías y comida, tiendas, servicios profesionales — quien dependa de reputación, tráfico a pie o búsquedas ‘cerca de mí’. Si no sabes si encajas, pregunta. Preferimos una conversación real a una lista rígida.",
+            },
+            {
+                question: "¿Qué es lo que realmente construyen?",
+                answer:
+                    "Sitios que funcionan como presencia en línea de verdad: quiénes son, qué ofrecen, pruebas y formas claras de contacto — no una tarjeta digital delgada. Usamos las últimas tecnologías web y SEO para que cargue bien, se lea bien y pueda aparecer en búsqueda y mapas. ¿Algo fuera de menú? Cuéntanos; te decimos si encaja con nosotros.",
             },
             {
                 question: "¿Cómo empezamos?",
-                answer: "Solo contáctanos a través del formulario. Agendamos una llamada rápida para conocer tu negocio y te enviamos una propuesta en pocos días.",
+                answer:
+                    "Usa el formulario. Di tipo de negocio, zona y qué quieres que hagan los visitantes (llamar, reservar, visitar, pedir). Agendamos una llamada corta y luego una propuesta clara — en pocos días. Sin guion que tengas que cumplir al pie de la letra.",
             },
             {
                 question: "¿Cuánto cuesta un proyecto?",
-                answer: "El precio depende del alcance. Un sitio web básico empieza alrededor de $1,500, mientras que los paquetes de marca y SEO varían. Te daremos una cotización clara y detallada antes de comenzar cualquier trabajo.",
+                answer:
+                    "El alcance marca el precio: páginas, idiomas, cuánta historia personalizada y extras. Verás un desglose antes de comprometerte. Si el presupuesto es ajustado, dilo; a veces podemos por fases.",
             },
             // Proyecto
             {
-                question: "¿Cuánto tarda en estar listo un sitio web?",
-                answer: "La mayoría de los sitios se publican en 2 a 4 semanas. Los proyectos más grandes con funciones personalizadas pueden tomar más tiempo. Acordamos el cronograma desde el inicio y te mantenemos informado.",
+                question: "¿Cuánto tarda un sitio web?",
+                answer:
+                    "Muchos sitios de negocios locales salen en unas dos a cuatro dias cuando el contenido fluye. Historias más grandes tardan más — acordamos fechas desde el inicio.",
             },
             {
-                question: "¿Cuántas revisiones están incluidas?",
-                answer: "Cada proyecto incluye dos rondas de revisiones. Generalmente es suficiente para lograr el resultado ideal sin exceder el alcance. Se pueden agregar rondas adicionales si es necesario.",
+                question: "¿Cuántas revisiones incluyen?",
+                answer:
+                    "Dos rondas estructuradas vienen de serie — suficiente para afinar sin bucles eternos. Más pasadas son posibles si las acotamos.",
             },
             {
                 question: "¿Qué necesitan de mi parte?",
-                answer: "Principalmente tu tiempo para algunas conversaciones y cualquier recurso existente: logotipo, fotos, colores de marca. Si aún no los tienes, podemos ayudarte a crearlos.",
+                answer:
+                    "Un poco de tu tiempo y lo que tengas: logo, fotos de trabajos o productos, horarios, zonas de servicio, borradores de texto. ¿Faltan piezas? Te ayudamos a reunir material simple para no frenar el lanzamiento.",
             },
             // Soporte
             {
                 question: "¿Qué pasa después del lanzamiento?",
-                answer: "Ofrecemos una ventana de 30 días después del lanzamiento para corregir errores sin costo. Luego tenemos planes de mantenimiento accesibles para actualizaciones, copias de seguridad y cambios continuos.",
+                answer:
+                    "Treinta días de corrección de fallos incluidos. Después podemos mantener las cosas al día — horarios de temporada, fotos nuevas, ajustes de texto — en términos que tengan sentido para ti.",
             },
             {
-                question: "¿Garantizan su trabajo?",
-                answer: "Sí. Respaldamos todo lo que entregamos. Si algo no está bien, lo corregimos. Nuestro objetivo es una relación a largo plazo, no una transacción puntual.",
+                question: "¿Responden por su trabajo?",
+                answer:
+                    "Sí. Si algo falla, lo arreglamos. El negocio local es boca a boca; buscamos relaciones, no una sola factura.",
             },
             {
-                question: "¿Pueden ayudarme si ya tengo un sitio web?",
-                answer: "Por supuesto. Podemos rediseñar, mejorar el rendimiento, corregir problemas o hacernos cargo del mantenimiento de sitios existentes, sin importar quién los haya construido.",
+                question: "Ya tengo sitio — ¿pueden ayudar?",
+                answer:
+                    "A menudo. Podemos refrescar diseño, rendimiento, SEO local o hacernos cargo de actualizaciones. Revisamos lo que hay y recomendamos el siguiente paso más sensato.",
             },
         ],
     } satisfies FaqDict,
