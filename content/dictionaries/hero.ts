@@ -11,7 +11,7 @@ export const heroDict = {
         ctaHref: "#contact",
         cta2: "Learn More",
         cta2Href: "#services",
-        badge: "Software, Web Development &SEO",
+        badge: "Software, Web Development & SEO",
     } satisfies HeroDict,
     es: {
         title: "Pillacela Solutions",
