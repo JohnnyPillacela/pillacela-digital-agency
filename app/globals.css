@@ -186,4 +186,13 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
+
+  /* Hero radial wash — `var(--x)/36%` inside arbitrary gradients is invalid CSS; use color-mix. */
+  .bg-hero-radial-glow {
+    background-image: radial-gradient(
+      ellipse 80% 60% at 70% 40%,
+      color-mix(in srgb, var(--primary) 36%, transparent) 0%,
+      transparent 65%
+    );
+  }
 }
