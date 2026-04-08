@@ -48,6 +48,10 @@ export const metadata: Metadata = {
         template: `%s | ${shared.siteName}`,
     },
     description: shared.siteDescription,
+    icons: {
+        icon: shared.images.favicon,
+        apple: shared.images.favicon,
+    },
     openGraph: {
         siteName: shared.siteName,
         locale: "en_US",

@@ -17,6 +17,8 @@ export const shared = {
     },
     images: {
         ogImage: "/website-screenshots/pillacela-hero.png",
+        /** Tab / bookmark icon; PNG is fine for modern browsers. */
+        favicon: "/page-images/ps-logo.png",
     },
     navCta: {
         label: "Book a Call",
