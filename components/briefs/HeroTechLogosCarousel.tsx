@@ -27,7 +27,7 @@ export function HeroTechLogosCarousel({ logos }: Props) {
     const [autoplay] = React.useState(
         () =>
             Autoplay({
-                delay: 1200,
+                delay: 1100,
                 stopOnInteraction: false,
                 stopOnMouseEnter: true,
             })
