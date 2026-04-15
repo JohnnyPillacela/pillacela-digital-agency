@@ -2,7 +2,6 @@
 
 import BriefAbout from "@/components/briefs/BriefAbout"
 import BriefOwner from "@/components/briefs/BriefOwner"
-import BriefContact from "@/components/briefs/BriefContact"
 import BriefFaq from "@/components/briefs/BriefFaq"
 import BriefHero from "@/components/briefs/BriefHero"
 import BriefPainPoints from "@/components/briefs/BriefPainPoints"
@@ -33,7 +32,6 @@ import {
 import type { Locale } from "@/types/locale"
 import { ContactSection } from "../sections/contact/contact-section"
 import { TestimonialsSection } from "../sections/testimonials/testimonials-section"
-import BriefTestimonials from "../briefs/BriefTestimonials"
 type Props = {
     locale: Locale
 }
@@ -64,13 +62,11 @@ export default function HomePage({ locale }: Props) {
             <BriefServices dict={services} stats={stats} />
             <BriefProcess dict={process} />
             <BriefWork dict={work} />
-            <BriefTestimonials dict={testimonials} />
             <TestimonialsSection dict={testimonials} />
             <BriefPricing dict={pricing} trustBadges={trustBadges} />
             <CtaBanner dict={ctaBanner} />
             <BriefFaq dict={faq} />
             <BriefServiceAreas dict={serviceAreas} />
-            <BriefContact dict={contact} />
             <ContactSection dict={contact} form={form}/>
             <BriefOwner dict={owner} />
         </>
